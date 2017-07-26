@@ -89,11 +89,11 @@ noble.on('discover', function(peripheral) {
                                 		disco = disco * 0.01;
                                 		
                                 		// 熱中症危険度
-										var heat = ((data[16] & 0xff) << 8) + (data[15] & 0xff);
+                                		var heat = ((data[16] & 0xff) << 8) + (data[15] & 0xff);
                                 		heat = heat * 0.01;
                                 		
                                 		// バッテリー電圧
-										var batt = ((data[18] & 0xff) << 8) + (data[17] & 0xff);
+                                		var batt = ((data[18] & 0xff) << 8) + (data[17] & 0xff);
                                 		batt = batt * 0.001;
 
                                 		console.log('No=' + data[0]);
